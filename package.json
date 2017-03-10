@@ -1,0 +1,31 @@
+{
+  "name": "git-repo-downloader",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha -t 15000 test/*.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yxxx5/git-download.git"
+  },
+  "author": "yxxx5",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yxxx5/git-download/issues"
+  },
+  "homepage": "https://github.com/yxxx5/git-download#readme",
+  "dependencies": {
+    "contentstream": "^1.0.0",
+    "download": "^5.0.3",
+    "download-git-repo": "^0.2.1",
+    "q": "^1.4.1",
+    "rimraf": "^2.6.1",
+    "unzip": "^0.1.11"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0"
+  }
+}
