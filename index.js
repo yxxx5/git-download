@@ -19,12 +19,20 @@ module.exports = (repo, options) => {
               rimraf(options.dest + '/.git', fs)
             })
   } else {
+
     return new Promise(async (resolve, reject) => {
       try {
         contentstream(
           await download(url)
         ).pipe(unzip.Extract({ path: options.dest }))
-        resolve(null);
+          .on('close', () => {
+          if (fs.existsSync('./git-download-master')) {
+            resolve(null);
+          }
+        }).on('error', (err) => {
+            reject(err)
+        })
+
       } catch (err) {
         reject(err)
       }
