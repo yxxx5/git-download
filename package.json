@@ -1,6 +1,6 @@
 {
   "name": "git-repo-downloader",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "download git repo from github、gitlab",
   "main": "index.js",
   "scripts": {
@@ -25,7 +25,9 @@
     "unzip": "^0.1.11"
   },
   "keywords": [
-    "git", "git-download", "download"
+    "git",
+    "git-download",
+    "download"
   ],
   "devDependencies": {
     "chai": "^3.5.0",
