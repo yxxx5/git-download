@@ -1,7 +1,7 @@
 {
   "name": "git-repo-downloader",
   "version": "0.0.1",
-  "description": "",
+  "description": "download git repo from github、gitlab",
   "main": "index.js",
   "scripts": {
     "test": "mocha -t 15000 test/test.js"
@@ -19,12 +19,14 @@
   "dependencies": {
     "contentstream": "^1.0.0",
     "download": "^5.0.3",
-    "download-git-repo": "^0.2.1",
     "promise-from-stream": "^0.2.2",
     "q": "^1.4.1",
     "rimraf": "^2.6.1",
     "unzip": "^0.1.11"
   },
+  "keywords": [
+    "git", "git-download", "download"
+  ],
   "devDependencies": {
     "chai": "^3.5.0",
     "mocha": "^3.2.0"
