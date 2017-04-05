@@ -11,7 +11,7 @@ module.exports = async(repo, options) => {
     repo = normalize(repo)
     let url = getUrl(repo, options.clone)
     options = Object.assign({
-        dest: options.clone ? repo.name : '.',
+        dest: options.clone ? options.name || repo.name : '.',
     }, options)
 
     if (options.clone) {

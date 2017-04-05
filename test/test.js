@@ -1,5 +1,4 @@
 const assert = require('assert')
-//const assert = require('chai').assert
 const download = require('../index')
 const rimraf = require('rimraf').sync
 const fs = require('fs')
@@ -24,8 +23,7 @@ describe('Git Repo Download', function() {
     describe('#download', function() {
         it('should download repo git-download from github', async() => {
             await download('github:github.com:yxxx5/git-download', {
-                clone: false,
-                dest: './'
+                clone: false
             })
 
             assert.ok(fs.existsSync('./git-download-master'), 'git-download folder not exist')
