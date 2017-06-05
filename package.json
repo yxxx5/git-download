@@ -1,6 +1,6 @@
 {
   "name": "git-repo-downloader",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "download git repo from github、gitlab",
   "main": "index.js",
   "scripts": {
