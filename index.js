@@ -42,8 +42,9 @@ module.exports = async(repo, options) => {
 function getUrl(repo, options) {
     let url
     if (options.clone) {
-        let p = options.ssh ? 'git@' : options.protocol + '://'
-        url = p + repo.host + ':' + repo.owner + '/' + repo.name + '.git'
+        url = options.ssh ? 'git@' : options.protocol + '://'
+        url += repo.host + (options.ssh ? ':' : '/')
+        url += repo.owner + '/' + repo.name + '.git'
     } else {
         switch (repo.type) {
             case 'github':
@@ -59,6 +60,7 @@ function getUrl(repo, options) {
 
         }
     }
+    console.log(url)
     return url
 }
 
