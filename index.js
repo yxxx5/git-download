@@ -60,6 +60,7 @@ function getUrl(repo, options) {
 
         }
     }
+    console.log()
     console.log(url)
     return url
 }
