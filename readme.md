@@ -3,7 +3,7 @@ download git repo from github、gitlab
 
 #### install
 
-    $ npm install --save download
+    $ npm install --save git-repo-downloader
 
 #### Usage
 
